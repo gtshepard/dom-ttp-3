@@ -1,0 +1,36 @@
+.h-container {
+   display:inline-block;
+}
+
+.con {
+    width: 600px;
+    height: 40%;
+    background-color: red;
+    padding: 10px;
+}
+
+.answer {
+  width: 60px;
+  height: 40px;
+  background-color: #00FFFF;
+  border-radius: 40px;
+  border: solid;
+  border-width: 5px;
+  border-color: #C0C0C0;
+  float: left;
+}
+
+.answer-2 {
+  width: 60px;
+  height: 40px;
+  background-color: #00FFFF;
+  border-radius: 40px;
+  border: solid;
+  border-width: 5px;
+  border-color: #C0C0C0;
+  float:right;
+}
+
+
+
+
