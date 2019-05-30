@@ -8,7 +8,9 @@
     background-color: #C0C0C0;
     padding: 10px;
 }
-
+.base-con {
+  text-align: center;
+}
 .answer {
   width: 100px;
   height: 40px;
@@ -33,6 +35,10 @@
   float:right;
 }
 
-
-
-
+.box {
+    display: inline-block;;
+    width: 500px;
+    height: 500px;
+    background-color: #C0C0C0;
+    padding: 10px;
+}
