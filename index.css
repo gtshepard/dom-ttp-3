@@ -36,9 +36,11 @@
 }
 
 .box {
-    display: inline-block;;
+    display: inline-block;
+    text-align: center;
     width: 500px;
     height: 500px;
     background-color: #C0C0C0;
     padding: 10px;
+    font-size: 40px;
 }
