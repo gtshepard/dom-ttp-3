@@ -4,11 +4,13 @@
     <head>
       <link rel="stylesheet" href="skeleton.css">
       <link rel="stylesheet" href="index.css">
-      <script> 
+      <script>
+
+        let populateText = ((elem, msg) => {
+          document.getElementById(elem).innerHTML = msg;
+        });
         
-        
-        document.getElementById("p1").innerHTML = "New text!" 
-      
+
       </script>
     </head>
 
@@ -16,10 +18,10 @@
 
         <p>Hello World</p>
         <div class="con">
-          <div class="button"><p>click me</p></div>
-        <div class="answer"><p class="text-1"></p></div>
-        <div class="button"><p>no click me</p></div>
-        <div class="answer-2"><p class="text-2"></p></div>
+          <div onclick='populateText("p1-ans-1", "Im Right")' id="btn-click-me" class="button"><p>click me</p></div>
+          <div id="p1-ans-1" class="answer"><p class="text-1"></p></div>
+          <div onclick='populateText("p2-ans-2", "No Im Right")' id="btn-no-click-me" class="button"><p>no click me</p></div>
+          <div id="p2-ans-2"class="answer-2"><p class="text-2"></p></div>
         </div>
     </body>
 
