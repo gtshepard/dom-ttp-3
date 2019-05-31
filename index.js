@@ -3,18 +3,28 @@ let populateText = ((elem, msg) => {
 });
 
 let getPassword = (() => {
- // let x = document.getElementById("pass").innerContent;
-  //let y = document.getElementsByTagName('input');
-  return document.getElementById("pass").value
- // for (let i = 0; i < y.length;i++){
-  
- // }
-  console.log(y);
+  return document.getElementById("pass").value;
+});
+
+let updateHeader = (() => {
+    let arr = document.getElementById("input-form").children;
+    let msg = ""
+
+    for (let i = 0; i < arr.length; i++){
+      let val = arr[i];
+
+      if (arr[i].value !== undefined)
+        msg = msg + " " +  arr[i].value;
+    } 
+    console.log(msg)
+    populateText("header", msg);
 });
 
 let isCorrect = (() => {
-   if ('1234567' === getPassword())
+   if ('1234567' === getPassword()) {
       alert("Correct");
+      updateHeader(); 
+   }
 });
 
 
