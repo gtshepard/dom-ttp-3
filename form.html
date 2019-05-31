@@ -2,17 +2,21 @@
   
   <html>
       <head>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="skeleton.css">
         <link rel="stylesheet" href="index.css">
       <script src="index.js"></script> 
      </head>
 
     <body>
+        <h1 id="header"></h1>
         <div class="base-con">
-        <form>
+        <div> </div>
+        <form id="input-form"">
            <input type="text" name="firstname" placeholder="First name"><br>
            <input type="text" name="lastname" placeholder="Last Name"><br>
-            <input type="text" name="email" placeholder="email@example.com"><br>
+           <input type="text" name="email" placeholder="email@example.com"><br>
+           <input oninput="isCorrect()"id="pass" type="text" name="password" placeholder="password"><br>
            <input type="submit" value="Submit">
         </form>
         </div>
